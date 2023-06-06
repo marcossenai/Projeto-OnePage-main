@@ -1,0 +1,389 @@
+/* RESEt CSS */
+/* RESET CSS */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+/* FIM RESET CSS */
+@font-face {
+    font-family: 'Mont';
+    src: url(Assets/Montserrat-VariableFont_wght.ttf);
+}
+
+/* HEADER */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+}
+.item{
+    font: 400 30px 'Mont' , sans-serif;
+    color: #678471;
+}
+.item:hover{
+    font: 400 30px 'Mont' , sans-serif;
+    color: #ffa36a;
+    transition: 0.3s;
+}
+/* FIM HEADER */
+
+/* DIVISÃO */
+.divisao{
+    height: 1px;
+    background: #47564c;
+    margin: 15px 0;
+}
+/* FIM DIVISÃO */
+
+/* NOSSA COMIDA */
+.cozinhando{
+    width: 500px;
+    border-radius: 5px;
+}
+
+.titulo{
+    font: 500 40px 'Mont' , sans-serif;
+    color: #47564c;
+    margin-bottom: 20px;
+}
+.texto{
+    font: 300 20px 'Mont' , sans-serif;
+    text-align: justify;
+}
+#nossaComida{
+    margin: 0 70px;
+}
+
+#nossaComida .conteudo{
+    margin-left: 30px;
+}
+
+/* NOSSA EQUIPE */
+#nossaEquipe{
+    margin: 0 70px;
+}
+.panela{
+    width: 500px;
+    border-radius: 5px;
+}
+#nossaEquipe .conteudo{
+    margin-right: 30px;
+}
+
+/* CARDAPIO */
+.comida{
+    width: 100px;
+}
+.comida:hover{
+    width: 120px;
+    transition: 0.3s ease-in-out;
+}
+.pratos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.prato{
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    margin: 15px 30px;
+    padding: 15px;
+}
+.cardapio{
+    margin: 0 70px;
+}
+.prato-texto{
+    font: 300 12px 'Mont' , sans-serif;
+    text-align: justify;
+}
+.prato-nome, .prato-preco{
+    font: 600 15px 'Mont' , sans-serif;
+}
+
+/* RODAPÉ */
+#contato{
+    background: #678471;
+}
+.amm{
+    font: 600 35px 'Mont' , sans-serif;
+    color: #fff;
+}
+.cs{
+    font: 400 25px 'Mont' , sans-serif;
+    color: #ffa36a;
+}
+.nome{
+    text-align: center;
+}
+.icone{
+    width: 30px;
+    margin-right: 12px;
+}
+.rede{
+    display: flex;
+    text-align: center;
+}
+.rede-nome{
+     color: #fff;
+     font: 400 20px 'Mont' , sans-serif;
+}
+.endereco-nome{
+    color: #fff;
+    font: 400 24px 'Mont' , sans-serif;
+}
+.endereco-descricao{
+    color: #fff;
+    font: 400 20px 'Mont' , sans-serif;
+}
+.endereco{
+    width: 500px;
+}
+.contatos{
+    padding: 70px 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 400px){
+    .container, .conteudo{
+      margin: 0;
+      border: 0;
+      padding: 0;
+}
+
+    #nossaComida .container{
+      flex-direction: column;
+
+    }
+    #nossaEquipe .container{
+        flex-direction: column-reverse;
+    }
+   
+    #contato .container{
+        flex-direction: column;
+    }
+
+    .cozinhando, .panela{
+        width: 80vw;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .item{
+        font-size: 8px;
+    }
+
+    #nossaComida, #nossaEquipe{
+        margin: 0 0 25px;
+    }
+
+    #header .container{
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width: 40vw;
+    }
+
+    .nome, .redes, .endereco{
+        padding-bottom: 10px;
+    }
+
+    .amm{
+        font-size: 25px;
+    }
+    .cs{
+        font-size: 20px;
+    }
+   
+    .rede-nome{
+        font-size: 18px;
+    }
+    .endereco-descricao{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .endereco-nome{
+        font-size: 22px;
+    }
+
+    .endereco{
+        width: 80vw;
+    }
+   
+    .prato{
+         margin: 15px;
+    }
+
+    .cardapio{
+        margin: 15px;
+    }
+
+    .conteudo{
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 15px;
+    }
+
+    #header .container img{
+        display: block;
+        margin: 0 30vw;
+    }
+    body{
+        background-color: #fff;
+    }
+}
+
+
+@media screen and (min-width:401px) and (max-width:768px){
+    .container, .conteudo{
+        margin: 0;
+        border: 0;
+        padding: 0;
+  }
+ 
+      #nossaComida .container{
+        flex-direction: column;
+ 
+      }
+      #nossaEquipe .container{
+          flex-direction: column-reverse;
+      }
+     
+      #contato .container{
+          flex-direction: row;
+          flex-wrap: wrap;
+
+         
+      }
+     
+
+       
+      .panela{
+          width: 80vw;
+      }
+ 
+      .titulo{
+          font-size: 30px;
+          text-align: center;
+      }
+ 
+      .item{
+          font-size: 15px;
+          text-align: center;
+      }
+ 
+      #nossaComida, #nossaEquipe{
+          margin: 0 0 25px;
+      }
+ 
+      #header .container{
+          flex-wrap: wrap;
+      }
+ 
+      .logo{
+          width: 40vw;
+      }
+
+      .nome{
+        padding-bottom: 10px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0 0;
+     
+       
+      }
+ 
+      .redes{
+          padding-bottom: 10px;
+       
+         
+      }
+      .endereco{
+        padding-bottom: 10px;
+        margin-left: 450px;
+        margin-top: -30px;
+      }
+ 
+      .amm{
+          font-size: 25px;
+          /* margin-right: 400px; */
+   
+           }
+      .cs{
+          font-size: 20px;
+          /* margin-right: 400px; */
+      }
+     
+      .rede-nome{
+          font-size: 18px;
+         
+      }
+     
+     
+
+      .endereco-descricao{
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 12px;
+      }
+ 
+      .endereco-nome{
+          font-size: 22px;
+      }
+ 
+      .endereco{
+          width: 80vw;
+      }
+     
+      .prato{
+           margin: 15px;
+      }
+ 
+      .cardapio{
+          margin: 15px;
+      }
+ 
+      .conteudo{
+          margin-left: 0;
+          margin-right: 0;
+          margin: 0 15px;
+      }
+ 
+      #header .container img{
+          display: block;
+          margin: 0 30vw;
+      }
+      body{
+          background-color: #fff;
+      }
+      .panela{
+        width: 500px;
+        height: 300px;
+      }
+       .cozinhando{
+        width: 500px;
+        height: 300px;
+       }
+}
